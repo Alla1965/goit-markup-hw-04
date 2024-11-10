@@ -20,6 +20,7 @@ ol {
 }
 a {
 	text-decoration: none;
+	display: block;
 }
 ul {
 	list-style-type: none;
@@ -28,10 +29,13 @@ img {
 	overflow: hidden;
 	display: block;
 	max-width: 100%;
+	height: auto;
 }
 section {
 	padding-top: 120px;
 	padding-bottom: 120px;
+	max-width: 1440px;
+
 }
 .visually-hidden {
 	position: absolute;
@@ -56,6 +60,7 @@ section {
 .caption .container {
 	display: flex;
 }
+
 .nav-logo-nav {
 	display: flex;
 	align-items: center;
@@ -97,6 +102,14 @@ nav .link:focus {
 	gap: 40px;
 	padding: 24px 0;
 }
+.link:hover::after {
+	content: "";
+  width: 48px;
+  height: 4px;
+  /* background-color: #fff; */
+  background: #404BBF;
+
+}
 .link {
 	padding: 24px 0;
 }
@@ -111,9 +124,7 @@ nav .link:focus {
 	gap: 40px;
 	align-items: center;
 }
-/* address .link {
-	font-style: normal;
-} */
+
 .link-address {
 	display: flex;
 	line-height: 24px;
@@ -134,11 +145,19 @@ nav .link:focus {
 .link-address:focus {
 	color: #404bbf;
 }
+.icon {
+	fill: none;
+	}
+
 .section-one {
 	display: flex;
+    max-width: 1440px;
 	background-color: #2e2f42;
 	padding-top: 188px;
 	padding: 188px 0;
+	background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		url(../images/people-office\ 1.png);
+	background-size: cover;
 }
 .list-section-one li {
 	padding: 40px;
@@ -148,6 +167,9 @@ nav .link:focus {
 	flex-direction: column;
 	padding: 0px;
 }
+/* .section-one img {
+	object-fit: scale-down;
+} */
 .head-one {
 	font-family: Roboto;
 	font-size: 56px;
@@ -189,6 +211,17 @@ button:focus {
 	display: flex;
 	flex-direction: column;
 }
+.icon-container {
+	
+	display: flex;
+	width: 264px;
+	height: 112px;
+	background-color: #dde7ee;
+	border: 1px solid #8e8f99;
+	padding: 24px 100px;
+	margin-bottom: 8px;
+	}
+
 .section-two .container h2 {
 	visibility: hidden;
 }
@@ -221,7 +254,7 @@ button:focus {
 	letter-spacing: 0.02em;
 	color: #434455;
 	/* text-align: center; */
-	margin: 0px;
+	margin-bottom: 8px;
 }
 .section-three {
 	background-color: #f4f4fd;
@@ -230,6 +263,7 @@ button:focus {
 	display: flex;
 	flex-direction: column;
 }
+
 .head-second {
 	font-family: Roboto;
 	font-size: 36px;
@@ -250,9 +284,30 @@ button:focus {
 	background-color: #ffffff;
 	width: calc((100% - 72px) / 4);
 	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 2px 1px 0px #2E2F4214,
+	0px 1px 1px 0px #2E2F4229, 
+	0px 1px 6px 0px #2E2F4214;
 }
 .name {
-	padding: 32px 0;
+	padding: 32px 16px;
+}
+.net {
+	display: flex;
+	gap: 24px;
+
+}
+.icon-net {
+	fill: none;
+
+}
+.circle {
+	display:flex;
+	width: 40px;
+	height: 40px;
+	background-color: #4d5ae5;
+	border-radius: 50%;
+	padding: 12px;
+
 }
 .section-four {
 	padding-top: 120px;
@@ -293,7 +348,16 @@ button:focus {
 }
 list-portfolio {
 	width: calc((100% - 48px) / 3);
+	transition-property: box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.list-portfolio:hover {
+	box-shadow: 0px 2px 1px 0px #2E2F4214, 
+	0px 1px 1px 0px #2E2F4229, 
+	0px 1px 6px 0px #2E2F4214;
+}
+
 .our-portfolio h3 {
 	font-family: Roboto;
 	font-size: 20px;
@@ -321,12 +385,14 @@ list-portfolio {
 }
 .basement {
 	background-color: #2e2f42;
-	/* padding-top: 120px;
-	padding-bottom: 120px; */
-	padding: 100px 0;
+		padding: 100px 0;
 }
 .basement .container {
+	display:flex;
+	align-items: baseline;
 	padding-left: 0;
+	gap: 120px;
+
 }
 .basement .logo {
 	font-family: "Raleway", sans-serif;
@@ -342,7 +408,9 @@ list-portfolio {
 .basement .logo-footer {
 	color: #f4f4fd;
 }
-.text-footer {
+.text-footer,
+.footer-net p
+ {
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 400;
@@ -356,7 +424,20 @@ list-portfolio {
 .nav-logo-nav .logo {
 	display: flex;
 }
+
 .footer-list {
 	width: 264px;
 	height: 112px;
+}
+.footer-net {
+	display: inline-flex;
+	flex-direction: column;
+	gap:16px;
+	max-width: 264px;
+}
+.footer-logo {
+	display: flex;
+	flex-direction: column;
+	max-width: 264px;
+
 }

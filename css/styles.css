@@ -125,6 +125,7 @@ nav .link:focus {
 nav .current {
 	color: #404BBF;
 	position: relative;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
 	display: block;
@@ -158,6 +159,7 @@ bottom: -1px;
 	font-size: 16px;
 	font-weight: 400;
 	text-align: left;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-address a {
@@ -226,6 +228,7 @@ bottom: -1px;
 	border-radius: 4px;
 	cursor: pointer;
 	margin: 48px auto 0 auto;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 button:hover {
 	background-color: #404bbf;
@@ -349,9 +352,10 @@ button:focus {
 	height: 100%;
 	background-color:#4d5ae5;
 	border-radius: 50%;
-	display: flex;
+	/* display: flex; */
 	align-items: center; 
 	justify-content: center; 
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-circle:hover {
 	background-color: #404bbf; 
@@ -391,16 +395,11 @@ button:focus {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: calc((100% - 48px) / 3);
-	/* gap: 24px; */
 	row-gap: 48px;
 	column-gap: 24px;
-	/* max-width: 1128 px; */
-}
-list-portfolio {
+	}
+.list-portfolio {
 	width: calc((100% - 48px) / 3);
-	/* transition-property: box-shadow;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .list-portfolio:hover {
@@ -419,7 +418,7 @@ list-portfolio {
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #f4f4fd; 
+	color: #f4f4fd;; 
 	padding: 40px 32px;
 	background-color: #4d5ae5;
 	height: 100%;
@@ -479,16 +478,16 @@ list-portfolio {
 	color: #f4f4fd;
 }
 .text-footer,
-.footer-net p
+.footer-paragraph
  {
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #f4f4fd;
+	color: #FFFFFF;
 	letter-spacing: 0.02em;
 	max-width: 264px;
-	margin-bottom: 0px;
+	margin-bottom: 16px;
 	margin-top: 0px;
 }
 .nav-logo-nav .logo {
@@ -512,11 +511,7 @@ list-portfolio {
 	margin-right: 120px 
 
 }
-.footer-paragraph {
-	font-weight: 500;
-	color:#FFFFFF;
-	margin-bottom: 16px;
-}
+
 .circle-footer {
 	gap: 16px;
 }

@@ -399,34 +399,42 @@ button:focus {
 	column-gap: 24px;
 	}
 .list-portfolio {
+	/* position: relative;
+	overflow: hidden; */
 	width: calc((100% - 48px) / 3);
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.box-overlay {
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: absolute;
+	top: 0;	
+	height: 100%;
+	width: 100%;
+	background: #4d5ae5;
+	transform: translateY(100%); 
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.box-overlay:hover  .overlay {
+	transform: translateY(0%);
 }
 .list-portfolio:hover {
 	box-shadow: 0px 2px 1px 0px #2E2F4214, 
 	0px 1px 1px 0px #2E2F4229, 
 	0px 1px 6px 0px #2E2F4214;
-	transform: translateY(0%);
-}
-.list-portfolio-img {
-	position: relative;
-	overflow: hidden;
-}
+	}
 .text-paragraph {
-	position: absolute;
-	top: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #f4f4fd;; 
+	color: #f4f4fd;
 	padding: 40px 32px;
 	background-color: #4d5ae5;
-	height: 100%;
-	width: 100%;
-	transform: translateY(100%); 
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
+	}
 .our-portfolio h3 {
 	font-family: Roboto;
 	font-size: 20px;
@@ -477,9 +485,7 @@ button:focus {
 .basement .logo-footer {
 	color: #f4f4fd;
 }
-.text-footer,
-.footer-paragraph
- {
+.text-footer {
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 400;
@@ -489,6 +495,13 @@ button:focus {
 	max-width: 264px;
 	margin-bottom: 16px;
 	margin-top: 0px;
+}
+.footer-paragraph{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
 }
 .nav-logo-nav .logo {
 	display: flex;
@@ -515,3 +528,4 @@ button:focus {
 .circle-footer {
 	gap: 16px;
 }
+

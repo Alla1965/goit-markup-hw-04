@@ -362,10 +362,10 @@ button:focus {
 }
 
 .link-circle:hover {
-	background-color:#31d0aa;
+	background-color:#404bbf;
 }
 .link-circle:focus {
-	background-color: #31d0aa;
+	background-color: #404bbf;
 }
 .section-four {
 	padding-top: 120px;

@@ -509,6 +509,7 @@ letter-spacing: 0.02em;
 color: #FFFFFF ;
 margin-bottom: 16px;
 margin-top: 0px;
+font-weight: 500;
 }
 .nav-logo-nav .logo {
 	display: flex;

@@ -527,6 +527,12 @@ font-weight: 500;
 	max-width: 264px;
 	margin-right: 120px 
 }
+ .basement .link-circle:hover {
+	background-color:#31d0aa;
+}
+.basement .link-circle:focus {
+	background-color: #31d0aa;
+}
 
 .circle-footer {
 	gap: 16px;

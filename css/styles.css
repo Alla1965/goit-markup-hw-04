@@ -4,7 +4,7 @@ body {
 	background-color: #ffffff;
 	text-decoration: none;
 	font-style: normal;
-}
+	}
 h1,
 h2,
 h3,
@@ -34,7 +34,7 @@ img {
 section {
 	padding-top: 120px;
 	padding-bottom: 120px;
-	max-width: 1440px;
+	/* max-width: 1440px; */
 
 }
 .visually-hidden {
@@ -62,7 +62,7 @@ section {
 }
 .caption .container {
 	display: flex;
-	margin: 0 141px;
+	/* margin: 0 141px; */
 	
 }
 
@@ -187,7 +187,7 @@ bottom: -1px;
 
 .section-one {
 	display: flex;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 	background-color: #2e2f42;
 	padding-top: 188px;
 	padding: 188px 0;
@@ -289,6 +289,7 @@ button:focus {
 	text-align: left;
 	margin-bottom: 8px;
 }
+
 .text-three {
 	font-family: Roboto;
 	font-size: 16px;
@@ -297,6 +298,7 @@ button:focus {
 	letter-spacing: 0.02em;
 	color: #434455;
 	/* text-align: center; */
+	margin-top: 0;
 	margin-bottom: 8px;
 }
 .section-three {
@@ -332,6 +334,9 @@ button:focus {
 	0px 1px 1px 0px #2E2F4229, 
 	0px 1px 6px 0px #2E2F4214;
 }
+/* .list-three img {
+	object-fit: cover;
+} */
 .name {
 	padding: 32px 0
 }

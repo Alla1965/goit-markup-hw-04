@@ -35,6 +35,7 @@ section {
 	padding-top: 120px;
 	padding-bottom: 120px;
 	/* max-width: 1440px; */
+	
 
 }
 .visually-hidden {
@@ -187,10 +188,11 @@ bottom: -1px;
 
 .section-one {
 	display: flex;
-    /* max-width: 1440px; */
+    max-width: 1440px;
 	background-color: #2e2f42;
 	padding-top: 188px;
 	padding: 188px 0;
+	margin: 0 auto;
 		background-size: cover;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 	 rgba(46, 47, 66, 0.7)), 

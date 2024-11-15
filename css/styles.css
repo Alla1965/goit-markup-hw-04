@@ -138,12 +138,12 @@ bottom: -1px;
 	display: flex;
 	font-style: normal;
 	align-items: center;
-	margin: 24px 0px 24px auto;
-}
+	}
 .page-address {
 	display: flex;
 	gap: 40px;
 	align-items: center;
+	padding-left: 332px;
 }
 
 .link-address {
@@ -506,7 +506,7 @@ font-weight: 500;
 	display: flex;
 	flex-direction: column;
 	max-width: 264px;
-	margin-right: 120px 
+	margin-right: 120px ;
 }
  .basement .link-circle:hover {
 	background-color:#31d0aa;
